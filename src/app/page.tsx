@@ -11,7 +11,7 @@ export default function Home() {
 
   return (
     <div className="grid-cols-2 flex flex-col">
-      <div className="h-[90dvh] w-full">
+      <div className="h-[92dvh] w-full">
         <video
           ref={videoRef}
           autoPlay
@@ -23,9 +23,9 @@ export default function Home() {
           <source src="video/gym-video.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 flex items-center justify-center flex-col">
-          <div className="text-6xl font-bold uppercase mix-blend-luminosity">
+          <p className="sm:text-6xl  font-bold uppercase mix-blend-luminosity">
             Rogue Iron Gym
-          </div>
+          </p>
           <div className="font-serif font-large">
             "Break Chains. Lift Heavy. Stay Rogue"
           </div>

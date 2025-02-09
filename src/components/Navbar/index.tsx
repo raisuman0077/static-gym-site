@@ -9,13 +9,14 @@ import {
 } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const navigation = [
-  { name: "Home", href: "/", current: true },
-  { name: "Our Facilities", href: "#", current: false },
-  { name: "Services", href: "#", current: false },
-  { name: "About Us", href: "/about-us", current: false },
-  { name: "Contact Us", href: "#", current: false },
+  { name: "Home", href: "/" },
+  { name: "Our Facilities", href: "/facility" },
+  { name: "Services", href: "/service" },
+  { name: "About Us", href: "/about-us" },
+  // { name: "Contact Us", href: "/contact-us",  },
 ];
 
 function classNames(...classes: string[]) {
@@ -23,6 +24,7 @@ function classNames(...classes: string[]) {
 }
 
 export default function Navbar() {
+  const currentPath = usePathname();
   return (
     <Disclosure
       as="nav"
@@ -62,9 +64,9 @@ export default function Navbar() {
                       <Link
                         key={item.name}
                         href={item.href}
-                        aria-current={item.current ? "page" : undefined}
+                        aria-current={currentPath === item.href ? "page" : undefined}
                         className={classNames(
-                          item.current
+                          currentPath === item.href
                             ? "bg-black text-white"
                             : "text-white hover:bg-black hover:text-white",
                           "rounded-md px-3 py-2  font-medium text-base font-serif"
@@ -96,9 +98,9 @@ export default function Navbar() {
                     key={item.name}
                     as={Link}
                     href={item.href}
-                    aria-current={item.current ? "page" : undefined}
+                    aria-current={currentPath === item.href ? "page" : undefined}
                     className={classNames(
-                      item.current
+                      currentPath === item.href
                         ? "bg-black text-white"
                         : "text-white hover:bg-black hover:text-white",
                       "block rounded-md px-3 py-2 text-base font-medium"

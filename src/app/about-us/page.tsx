@@ -1,3 +1,3 @@
 export default function Page() {
-  return <div>about</div>;
+  return <div className="bg-white">about</div>;
 }
