@@ -59,7 +59,11 @@ export default function Page() {
               onMouseLeave={() => setHoverIndex(null)}
             >
               {/* Title at the top */}
-              <h3 className="text-2xl font-semibold z-20 bg-black/60 px-3 py-1 rounded">
+              <h3
+                className={`text-2xl font-semibold z-20 ${
+                  hoverIndex === index && "bg-black/60"
+                } px-3 py-1 rounded`}
+              >
                 {facility.title}
               </h3>
 
@@ -69,7 +73,7 @@ export default function Page() {
                 className="absolute bg-cover h-full w-auto"
               />
               {hoverIndex === index && (
-                <ul className="text-left mt-2 text-sm font-normal text-gray-200 space-y-1 bg-black/60 px-4 py-2 rounded w-full z-999">
+                <ul className="text-left mt-2 text-sm font-normal text-gray-200 space-y-1  px-4 py-2 rounded w-full z-999">
                   {facility.options.map((option, i) => (
                     <li key={i} className="list-disc">
                       {option}
