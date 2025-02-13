@@ -1,6 +1,6 @@
 export default function Page() {
   return (
-    <div className="bg-black pt-25 min-h-[92dvh] flex flex-col items-center text-white border-b-2 border-white">
+    <div className="bg-black pt-25 min-h-[92dvh] flex flex-col items-center text-white border-b-2 border-white pb-6">
       <div className="max-w-4xl text-center space-y-8">
         <h1 className="text-6xl font-bold text-white uppercase tracking-wide">
           Who We Are
@@ -13,8 +13,8 @@ export default function Page() {
         </p>
       </div>
 
-      <div className="w-full max-w-5xl text-center mt-12 space-y-8">
-        <div className="flex flex-col md:flex-row justify-between gap-12">
+      <div className="w-full max-w-5xl text-center mt-12 space-y-8  ">
+        <div className="flex px-4 flex-col md:flex-row justify-between gap-12">
           <p className="text-xl text-gray-300 leading-relaxed max-w-md border-2 border-white rounded-xl p-4 text-center">
             <span className="text-white font-semibold underline">
               🏋️ Expert Trainers:

@@ -29,7 +29,7 @@ const services = [
 
 export default function Page() {
   return (
-    <div className="min-h-[92dvh] pt-20 px-6 bg-gray-900 text-white">
+    <div className="min-h-[92dvh] pt-20 px-6 bg-gray-900 text-white pb-6">
       <h2 className="text-4xl font-bold text-center mb-10">Our Services</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6">
         {services.map((service) => (

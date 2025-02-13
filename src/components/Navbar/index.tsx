@@ -29,7 +29,7 @@ export default function Navbar() {
   return (
     <Disclosure
       as="nav"
-      className={`fixed w-full top-0 ${
+      className={`fixed w-full top-0  ${
         ["/facility", "/service", "/about-us"].includes(currentPath)
           ? "bg-[rgba(66,66,66,0.34)] "
           : "bg-[rgba(0,0,0,0.28)] shadow-lg shadow-cyan-50/40 "
@@ -96,7 +96,7 @@ export default function Navbar() {
             leaveFrom="translate-y-0 opacity-100"
             leaveTo="-translate-y-10 opacity-0"
           >
-            <DisclosurePanel className="sm:hidden absolute bg-[rgba(0,0,0,0.28)]  min-w-full">
+            <DisclosurePanel className="sm:hidden absolute bg-[rgba(0,0,0,0.92)]  min-w-full">
               <div className="space-y-1 px-2 pt-2 pb-3">
                 {navigation.map((item) => (
                   <DisclosureButton
