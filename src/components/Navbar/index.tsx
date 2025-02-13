@@ -24,13 +24,13 @@ function classNames(...classes: string[]) {
 }
 
 export default function Navbar() {
-  const currentPath = usePathname();
+  const currentPath = usePathname() ?? "";
 
   return (
     <Disclosure
       as="nav"
       className={`fixed w-full top-0 ${
-        currentPath === "/facility"
+        ["/facility", "/service", "/about-us"].includes(currentPath)
           ? "bg-[rgba(66,66,66,0.34)] "
           : "bg-[rgba(0,0,0,0.28)] shadow-lg shadow-cyan-50/40 "
       } z-10000`}
