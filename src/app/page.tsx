@@ -5,7 +5,7 @@ export default function Home() {
   const videoRef = useRef<HTMLVideoElement | null>(null);
   useEffect(() => {
     if (videoRef.current) {
-      videoRef.current.playbackRate = 0.35; // Set playback speed to 0.5x
+      videoRef.current.playbackRate = 0.8; // Set playback speed to 0.5x
     }
   }, []);
 
@@ -27,7 +27,7 @@ export default function Home() {
             Rogue Iron Gym
           </p>
           <div className="font-serif font-large">
-            "Break Chains. Lift Heavy. Stay Rogue"
+            &quot;Break Chains. Lift Heavy. Stay Rogue&quot;
           </div>
         </div>
       </div>

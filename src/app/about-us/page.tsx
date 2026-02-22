@@ -13,28 +13,24 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="w-full max-w-5xl text-center mt-12 space-y-8  ">
-        <div className="flex px-4 flex-col md:flex-row justify-between gap-12">
+      <div className="w-full max-w-5xl text-center mt-12 space-y-8">
+        <div className="flex px-4 flex-col md:flex-row justify-between gap-12 items-center">
           <div className="text-xl text-gray-300 leading-relaxed max-w-md border-2 border-white rounded-xl p-4 text-center">
-            <span className="text-white font-semibold underline">
-              🏋️ Expert Trainers:
-            </span>
+            <span className="text-white font-semibold ">🏋️ Expert Trainers:</span>
             <p>
               Get personalized coaching from certified professionals dedicated to your
               success.
             </p>
           </div>
           <div className="text-xl text-gray-300 leading-relaxed max-w-md border-2 border-white rounded-xl p-4 text-center">
-            <span className="text-white font-semibold underline">
-              🔥 Advanced Equipment:
-            </span>
+            <span className="text-white font-semibold ">🔥 Advanced Equipment:</span>
             <p>
               Train with cutting-edge machines and free weights tailored to your fitness
               goals.
             </p>
           </div>
           <div className="text-xl text-gray-300 leading-relaxed max-w-md border-2 border-white rounded-xl p-4 text-center">
-            <span className="text-white font-semibold flex-wrap underline">
+            <span className="text-white font-semibold flex-wrap ">
               💪 Strong Community:
             </span>
             <p>
