@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React, { useState } from "react";
 
 const facilities: { title: string; options: string[]; imgSrc: string }[] = [
@@ -66,7 +67,7 @@ export default function Page() {
                 {facility.title}
               </h3>
 
-              <img
+              <Image
                 src={facility.imgSrc}
                 alt={facility.title}
                 className="absolute bg-cover h-full w-auto"
